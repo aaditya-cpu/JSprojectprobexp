@@ -21,7 +21,11 @@ const card = document.getElementById("card");
 const btn = document.getElementById("btn");
 //Generate and combine to form a url to fetch data
 let getPokeData = () => {
+<<<<<<< HEAD
     let id = Math.floor(Math.random() * 500) + 1;
+=======
+    let id = Math.floor(Math.random() * 750) + 1;
+>>>>>>> exp
     console.log(id);
     const finalURl = url + id;
     console.log(finalURl);

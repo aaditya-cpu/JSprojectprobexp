@@ -19,7 +19,11 @@ body {
 }
 
 #card {
+<<<<<<< HEAD
     background: radial-gradient(circle at 50% 0%, orange 36%, #ffffff 36%);
+=======
+    /* background: radial-gradient(circle at 50% 0%, orange 36%, #ffffff 36%); */
+>>>>>>> exp
     width: 100%;
     padding: 30px 20px;
     /* border: 1px solid black; */
@@ -64,7 +68,16 @@ body {
     font-weight: 600;
 }
 
+<<<<<<< HEAD
 .types span {}
+=======
+.types span {
+    padding: 5% 20px;
+    border-radius: 40%;
+    color: #eeeeee;
+    text-shadow: 2px 2px 5px rgb(23, 23, 23);
+}
+>>>>>>> exp
 
 .stats {
     display: flex;
