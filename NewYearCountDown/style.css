@@ -1,0 +1,92 @@
+:root {
+    --color-white: #e1dede;
+    --color-black: #383838;
+    --color-glass: rgba(164, 164, 164, 0.06);
+    --color-shadow: 0 0 25px rgba(0, 0, 0, 0.673);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--color-white);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #f4a460;
+}
+
+.wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 16px;
+}
+
+.head h1 {
+    text-shadow: var(--color-shadow);
+    font-size: 6.2em;
+    font-weight: 700;
+    letter-spacing: .15em;
+    text-align: center;
+}
+
+.head h3 {
+    color: #383838;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background-color: var(--color-glass);
+    backdrop-filter: var(--color-shadow);
+    box-shadow: var(--color-shadow);
+    text-align: center;
+    /* align-content: center;
+    width: fit-content; */
+    padding: 8px 30px;
+}
+
+.countdown {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10%;
+    text-shadow: var(--color-shadow);
+}
+
+.box {
+    width: 28vmin;
+    height: 29vmin;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    border-radius: 51px;
+}
+
+.box:hover {
+    background: linear-gradient(145deg, #ffaf67, #dc9456);
+    box-shadow: 29px 29px 59px #9f6b3e, -29px -29px 59px #ffdd82;
+}
+
+span {
+    background-color: var(--color-glass);
+    backdrop-filter: blur(12px);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    font-size: 5em;
+    color: var(--color-black);
+    border-radius: 0.1em;
+}
+
+span.text {
+    font-size: 1em;
+    position: relative;
+    text-align: center;
+    padding: 0.7em 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: var(--color-shadow);
+}
