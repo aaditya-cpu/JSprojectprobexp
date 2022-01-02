@@ -119,6 +119,7 @@ body {
 input[type=range] {
     margin: 10px 0;
     width: 75%;
+    padding: 0 1%;
 }
 
 input[type=range]:focus {
@@ -164,7 +165,7 @@ input[type=range]::-moz-range-track {
 }
 
 input[type=range]::-moz-range-thumb {
-    box-shadow: 1px 1px 1px #d15757;
+    box-shadow: 1px 1px 1px #da7373;
     border: 1px solid #e4683f;
     height: 23px;
     width: 21px;
@@ -220,5 +221,13 @@ input[type=range]:focus::-ms-fill-upper {
 
 .measures .measurecount {
     font-size: 1.5em;
+    font-weight: 600;
+}
+
+.measurecount-text {
+    text-align: center;
+    font-size: .8em;
+    text-transform: uppercase;
+    padding: 1.5%;
     font-weight: 600;
 }
