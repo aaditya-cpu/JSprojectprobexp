@@ -23,25 +23,28 @@ const measureCount = document.querySelector('.measurecount');
 
 let bpm = 120; //bigger number
 let subbeat = 4; //smaller number
-
+let tempoTextstr = Allegro;
 // ------
 
 //events
 
 decTempo.addEventListener('click', () => {
-    if (bpm <= 20) { return } //check to come out if reached min value
+    if (bpm <= 10) { return } //check to come out if reached min value
     bpm--;
     // tempDisplay.textContent = bpm;
     // tempoSlide.value = bpm;
+    vaildTemp(); // validating via funct now
     updateMetro(); //update value via function 
 });
 incTempo.addEventListener('click', () => {
     if (bpm >= 300) { return } //check to come out if reached max value
     bpm++;
+    vaildTemp(); // validating via funct now
     updateMetro();
 });
 tempoSlide.addEventListener('input', () => {
     bpm = tempoSlide.value;
+    vaildTemp(); // validating vai funct now
     updateMetro();
 });
 
@@ -68,4 +71,14 @@ incBeat.addEventListener('click', () => {
 function updateMetro() {
     tempDisplay.textContent = bpm;
     tempoSlide.value = bpm;
+
+    tempoText.textContent = tempoTextstr;
+}
+
+function vaildTemp() {
+    if (bpm <= 10) { return };
+    if (bpm >= 300) { return };
+
+
+
 }
