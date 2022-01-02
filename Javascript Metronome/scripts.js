@@ -23,13 +23,15 @@ const measureCount = document.querySelector('.measurecount');
 
 let bpm = 120; //bigger number
 let subbeat = 4; //smaller number
-let tempoTextstr = Allegro;
+let ttstr = tempoText.textContent;
+// console.log(ttstr);
+
 // ------
 
 //events
 
 decTempo.addEventListener('click', () => {
-    if (bpm <= 10) { return } //check to come out if reached min value
+    if (bpm <= 20) { return } //check to come out if reached min value
     bpm--;
     // tempDisplay.textContent = bpm;
     // tempoSlide.value = bpm;
@@ -72,13 +74,38 @@ function updateMetro() {
     tempDisplay.textContent = bpm;
     tempoSlide.value = bpm;
 
-    tempoText.textContent = tempoTextstr;
-}
+    if (bpm <= 20) { ttstr = "Larghissimo" };
+
+    if (bpm > 20 && bpm <= 40) { ttstr = "Solenne/Grave" };
+
+    if (bpm > 40 && bpm <= 60) { ttstr = "Largo" };
+
+    if (bpm > 60 && bpm <= 66) { ttstr = "Larghetto" };
+
+    if (bpm > 66 && bpm <= 76) { ttstr = "Larghetto" };
+
+    if (bpm > 66 && bpm < 79) { ttstr = "Larghetto" };
+
+    if (bpm == 80) { ttstr = "Tranquillo" };
+
+    if (bpm > 80 && bpm <= 116) { ttstr = "Allegretto" };
+
+    if (bpm > 116 && bpm <= 120) { ttstr = "Allegro moderato" };
+
+    if (bpm > 120 && bpm <= 156) { ttstr = "Allegro" };
+
+    if (bpm > 156 && bpm <= 176) { ttstr = "Vivace" };
+
+    if (bpm > 176 && bpm <= 200) { ttstr = "Presto" };
+
+    if (bpm > 200 && bpm <= 300) { ttstr = "Prestissimo" };
+
+    //added values based on tempo
+
+    tempoText.textContent = ttstr;
+};
 
 function vaildTemp() {
-    if (bpm <= 10) { return };
+    if (bpm <= 20) { return };
     if (bpm >= 300) { return };
-
-
-
-}
+};
