@@ -2,7 +2,7 @@ let dayBox = document.getElementById("DayBox");
 let hrBox = document.getElementById("HrBox");
 let minBox = document.getElementById("MinBox");
 let secBox = document.getElementById("SecBox");
-let endDate = new Date(2022, 0, 1, 00, 00); // CHANGE THE YEAR HERE
+let endDate = new Date(2023, 0, 1, 00, 00); // CHANGE THE YEAR HERE
 let endTime = endDate.getTime();
 
 function countdown() {

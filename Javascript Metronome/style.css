@@ -1,0 +1,224 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: #525252;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.metro {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    justify-content: space-around;
+    margin: 1%;
+    border-radius: 32px;
+    background: linear-gradient(145deg, #d5ebff, #b3c6e6);
+    box-shadow: 9px 9px 51px #79869c, -9px -9px 51px #ffffff;
+    margin: 2%;
+    padding: 5%;
+}
+
+.bpmdisplay {
+    width: 100%;
+    text-align: center;
+    color: #031d44;
+}
+
+.bpmdisplay .tempo {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.tempo-text {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.tempo-setting {
+    display: flex;
+    justify-content: space-around;
+}
+
+.adjust-temp-btn {
+    border-radius: 50%;
+    background: #04395e;
+    font-size: 1em;
+    color: antiquewhite;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    align-content: center;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.tempo-setting .adjust-temp-btn:hover {
+    box-shadow: 9px 9px 51px #fa656587, -9px -9px 30px #2e71a2;
+}
+
+.strt-stop {
+    width: 5em;
+    height: 5em;
+    font-weight: 550;
+    font-size: .8em;
+    text-align: center;
+    border-radius: 30%;
+    line-height: 4.8em;
+    margin: 0 auto;
+    padding: 2%;
+    background: #70a288;
+    cursor: pointer;
+    color: white;
+}
+
+.strt-stop:hover {
+    font-weight: 800;
+    box-shadow: 20px 20px 41px #446353, -20px -20px 41px #9ce1bda3;
+    border-radius: 50%;
+}
+
+.measures {
+    display: flex;
+    justify-content: space-around;
+}
+
+.measures .stepper {
+    width: 1.25em;
+    height: 1.25em;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-weight: 550;
+    line-height: 1.25em;
+    border-radius: 40px;
+    background: #d5896f;
+    font-size: 1.25em;
+}
+
+.measures .stepper:hover {
+    box-shadow: 20px 20px 41px #825444, -20px -20px 41px #ffbe9a;
+    font-weight: 700;
+}
+
+
+/* slider setting */
+
+input[type=range] {
+    margin: 10px 0;
+    width: 75%;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animation: 0.2s;
+    box-shadow: 3px 3px 4px #e4683f;
+    background: #70a288;
+    border-radius: 14px;
+    border: 1px solid #031d44;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #d55353;
+    border: 1px solid #e4683f;
+    height: 23px;
+    width: 21px;
+    border-radius: 27px;
+    background: #d5896f;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -10px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #70a288;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animation: 0.2s;
+    box-shadow: 3px 3px 4px #e4683f;
+    background: #70a288;
+    border-radius: 14px;
+    border: 1px solid #031d44;
+}
+
+input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #d15757;
+    border: 1px solid #e4683f;
+    height: 23px;
+    width: 21px;
+    border-radius: 27px;
+    background: #d5896f;
+    cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animation: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #70a288;
+    border: 1px solid #031d44;
+    border-radius: 28px;
+    box-shadow: 3px 3px 4px #c8dceb;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #70a288;
+    border: 1px solid #031d44;
+    border-radius: 28px;
+    box-shadow: 3px 3px 4px #e4683f;
+}
+
+input[type=range]::-ms-thumb {
+    box-shadow: 1px 1px 1px #f06e6e;
+    border: 1px solid #e4683f;
+    height: 23px;
+    width: 21px;
+    border-radius: 27px;
+    background: #e4683f;
+    cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #70a288;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #70a288;
+}
+
+
+/*'''''''' slider setting ends''''' */
+
+.measures .measurecount {
+    font-size: 1.5em;
+    font-weight: 600;
+}
