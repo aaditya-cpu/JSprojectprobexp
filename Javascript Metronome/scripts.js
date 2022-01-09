@@ -17,9 +17,15 @@ const incBeat = document.querySelector('.add-beat');
 const measureCount = document.querySelector('.measurecount');
 //sub beat value
 
+const clickmain = new Audio('main-beat.mp3');
+//sound Main
+const clicksub = new Audio('sub-beat.mp3');
+//Sound sub beat
 //------------------!======
 //variables done 
 
+// clickmain.play();
+// clicksub.play();
 
 let bpm = 120; //bigger number
 let subbeat = 4; //smaller number
