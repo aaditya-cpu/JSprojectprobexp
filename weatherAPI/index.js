@@ -16,6 +16,12 @@ window.addEventListener('load', () => {
     //  console.log(cMonth);
     //  console.log(cYear);
     date = cYear + "-" + cMonth + "-" + cDay;
+    //##################HTML SELECTOR BEGINS ##################
+    let tenpDescript = document.querySelector('.description');
+    let tenp = document.getElementById('degree');
+    let local = document.querySelector('.locate');
+
+
     // let qi = yes;
     //  request format  http://api.weatherapi.com/v1/current.json?key=e29761bd6ad049a68f975205220602&q=22.7195687,75.8577258&aqi=no
 
@@ -34,19 +40,24 @@ window.addEventListener('load', () => {
                 })
                 .then(response => {
 
-                    console.log(response);
+                    const { localtime, temp_c, is_day } = response.current;
                     console.log(date);
                     console.log(requrl);
+                    //set Dom Elements from Api
+                    console.log(temp_c);
+                    tenp.innerHTML = temp_c;
+                    console.log(temp_c);
+
 
                 })
-            fetch(requrlAstro)
-                .then(atrodata => {
-                    return atrodata.json();
-                })
-                .then(responseAstro => {
-                    console.log(responseAstro);
-                    console.log(requrlAstro);
-                })
+                // fetch(requrlAstro)
+                //     .then(atrodata => {
+                //         return atrodata.json();
+                //     })
+                //     .then(responseAstro => {
+                //         console.log(responseAstro);
+                //         console.log(requrlAstro);
+                //     })
         })
 
     } else {
