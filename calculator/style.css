@@ -1,0 +1,23 @@
+    * {
+        box-sizing: border-box;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    body {
+        padding: 0%;
+        margin: 0%;
+        background: linear-gradient(45deg, #ffac81, #fec3a6, #cdeac0);
+    }
+    
+    .outer {
+        width: 7em;
+        margin-top: ;
+    }
+    
+    .calci_grid {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: minmax(20px, auto) repeat(5, 100px);
+    }
