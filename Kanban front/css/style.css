@@ -1,0 +1,89 @@
+/* !!!!!Colour Schema!!! */
+
+
+/* Forest Green **dark
+#013A20
+
+Emerald Green
+#478C5C
+
+Lint
+#BACC81
+
+Lint **light
+#CDD193 */
+
+.kanban {
+    display: flex;
+    background-color: #013A20;
+    padding: 1em;
+    width: 80vh;
+    border-radius: 20px;
+}
+
+.kanban * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.kanban_col {
+    flex: 1;
+}
+
+
+/* tricky  risk */
+
+.kanban_col:not(:last-child) {
+    margin-right: 1em;
+}
+
+.kanbanColTit {
+    margin-bottom: 3%;
+    font-size: 1.5em;
+    color: #CDD193;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+}
+
+.itemInput {
+    padding: 1.5%;
+    box-sizing: border-box;
+    background: #BACC81;
+    opacity: .8;
+    border-radius: 20px;
+    cursor: crosshair;
+    color: #013A20;
+}
+
+.dropzone {
+    height: .5em;
+    transition: background .15s, height 0.15s;
+}
+
+.dropzone--active {
+    height: 1em;
+    background: #BACC81;
+    opacity: .4;
+    border-radius: 20px;
+}
+
+.kanbanBtn {
+    padding: 1%;
+    /* margin: %; */
+    box-sizing: border-box;
+    background: #478C5C;
+    border: 0em;
+    cursor: cell;
+    border-radius: 20px;
+    color: #CDD193;
+    width: 100%;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.kanbanBtn:hover {
+    background: #CDD193;
+    color: #478C5C;
+    font-weight: 600;
+    /* Add Shadow */
+}
